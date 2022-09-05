@@ -1,23 +1,37 @@
-# Almost a circle
-Project done during Full Stack Software Engineering studies at ALX School. It aims to learn about unit testing, serialization, deserialization, JSON, args and kwargs in Python.
+# 0x0C-python-almost_a_circle
 
-# Technologies
-Python Scripts are written with Python 3.4.3
-Tested on Ubuntu 20.04 LTS
-## Files
-Inside models folder:
 
-Filename	Description
-__init__.py	Script that converts the directory as a package
-base.py	Base class of geometrical instances
-rectangle.py	Class that inherits attributes references from Base class
-square.py	Class that inherits attributes references from Square class
-Each class contains public/private attibutes, class and static methods. Also, these class raise exceptions when is required.
+## models/
 
-Inside tests/test_models folder:
+### base.py
+This file contains a class ``` Base ```. It is the '*base*' of all other classes in this project. Main goal is to manage ``` id ``` attribute to avoid code duplication.
 
-Filename	Description
-__init__.py	Script that converts the directory as a package
-test_base.py	Module that contains unittests to Base class
-test_rectangle.py	Module that contains unittests to Rectangle class
-test_square.py	Module that contains unittests to Square class
+### rectangle.py
+Contains the rectangle class that implements the base class. 
+
+### square.py
+This file contains the a class Square that implements the class Rectangle.
+
+###  __init__.py
+This makes the folder a python module.
+
+## tests/
+This folder contains the test files and folders of this project.
+
+### test_models/
+Test folder contains unittests for the model folder.
+
+#### test_base.py
+Test case  for ```base.py```.
+
+#### test_rectangle.py
+Test case for ```rectangle.py```.
+
+#### test_square.py
+Test case for ```square.py```.
+
+## *Resources*
+
+* [Args and Kwargs in Python](https://alx-intranet.hbtn.io/rltoken/7gc6UzxSL81HcuAwklUbuQ)
+* [unittest module](https://alx-intranet.hbtn.io/rltoken/soictNXCPE18ASL3INoeew)
+* [Python Documentation](https://docs.python.org/)
